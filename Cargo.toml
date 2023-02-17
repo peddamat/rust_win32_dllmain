@@ -7,4 +7,5 @@ edition = "2021"
 crate-type = ["dylib"]
 
 [dependencies]
+dll-syringe = "0.15.0"
 windows = {version = "0.*", features = ["Win32_Foundation", "Win32_System_SystemServices", "Win32_System_LibraryLoader", "Win32_System_Threading", "Win32_Security", "Win32_System_Console"]}

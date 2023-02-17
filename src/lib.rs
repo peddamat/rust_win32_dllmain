@@ -21,7 +21,7 @@ unsafe extern "system" fn main_wrapper(_: *mut c_void) -> u32 {
 pub fn main() -> Result<(), String> {
   unsafe {
     if AttachConsole(GetCurrentProcessId()).as_bool() || AllocConsole().as_bool() {
-      println!("test");
+      println!("Saying hello from the DLL!");
     }
   }
 
