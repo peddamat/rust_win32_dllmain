@@ -1,8 +1,5 @@
-
 use dll_syringe::{Syringe, process::OwnedProcess};
 use std::{thread, time};
-
-
 
 fn main() {
     // find target process by name
@@ -12,7 +9,7 @@ fn main() {
     let syringe = Syringe::for_process(target_process);
 
     // inject the payload into the target process
-    let injected_payload = syringe.inject("test_dll.dll").unwrap();
+    let injected_payload = syringe.inject("target\\debug\\test_dll.dll").unwrap();
     println!("DLL injected successfully!");
 
     // do something else
